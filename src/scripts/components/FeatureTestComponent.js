@@ -101,7 +101,7 @@ export default class FeatureTestComponent extends LitElement {
                     <div><code>${value}</code></div>
                 </div>
                 <footer class="footer">
-                    <a href="${this.model.specificationUrl} class="link">
+                    <a href="${this.model.specificationUrl}" class="link">
                         Specification
                         <span class="visually-hidden">for ${this.model.name}</span>
                     </a>
@@ -117,7 +117,7 @@ export default class FeatureTestComponent extends LitElement {
             <p>Test failed. Your browser probably doesn&rsquo;t support this feature yet.</p>
         </div>
         <footer class="footer">
-            <a href="${this.model.specificationUrl} class="link">
+            <a href="${this.model.specificationUrl}" class="link">
                 Specification
                 <span class="visually-hidden">for ${this.model.name}</span>
             </a>
