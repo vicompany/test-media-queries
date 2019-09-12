@@ -1,5 +1,7 @@
 import { LitElement, css, html } from 'lit-element';
-import FeatureModel from '../models/FeatureModel';
+import FeatureModel from '../../models/FeatureModel';
+
+import styles from './style.css';
 
 const features = new Set([
     new FeatureModel('any-hover', ['none', 'hover'], 'https://drafts.csswg.org/mediaqueries-4/#descdef-media-any-hover'),
@@ -31,11 +33,7 @@ export default class FeatureTestListComponent extends LitElement {
         };
     }
 
-    static styles = css`:host {
-        display: grid;
-        grid-gap: 1rem;
-        grid-template-columns: repeat(auto-fill, minmax(36ch, 1fr));
-    }`;
+    static styles = css([styles]);
 
     constructor() {
         super();

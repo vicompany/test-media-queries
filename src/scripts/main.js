@@ -1,3 +1,3 @@
-import './components/FeatureTestComponent';
-import './components/FeatureTestListComponent';
-import './views/AppView';
+import './components/FeatureTest';
+import './components/FeatureTestList';
+import './views/App';

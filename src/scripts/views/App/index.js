@@ -1,11 +1,9 @@
 import { LitElement, css, html } from 'lit-element';
 
+import styles from './style.css';
+
 export default class AppView extends LitElement {
-    static get styles() {
-        return css`.title {
-            margin-top: 0;
-        }`;
-    }
+    static styles = css([styles]);
 
     render() {
         return html`<main>

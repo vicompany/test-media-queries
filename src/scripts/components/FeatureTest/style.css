@@ -1,0 +1,48 @@
+@import '../../../styles/tools/card';
+@import '../../../styles/visually-hidden';
+
+:host {
+    @mixin card;
+}
+
+header {
+    @mixin card-header;
+}
+
+p {
+    margin: 0;
+}
+
+footer {
+    @mixin card-footer;
+}
+
+.title {
+    @mixin card-title;
+
+    flex: 1 0 auto;
+
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.body {
+    @mixin card-body;
+}
+
+.indicator {
+    display: inline-block;
+    height: 0.75rem;
+    width: 0.75rem;
+    border-radius: 50%;
+    
+    align-self: center;
+}
+
+.indicator--negative {
+    background-color: #f00;
+}
+
+.indicator--positive {
+    background-color: #0f0;
+}

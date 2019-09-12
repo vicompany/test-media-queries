@@ -1,0 +1,5 @@
+@import './tools/visually-hidden';
+
+.visually-hidden {
+    @mixin visually-hidden;
+}
